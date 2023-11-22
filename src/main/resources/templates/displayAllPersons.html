@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Persons</title>
+</head>
+<body>
+<h1>Liste Aller Personen</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Vorname</th>
+        <th>Nachname</th>
+        <th>Alter</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="person: ${persons}">
+        <td th:text="${person.firstName}"></td>
+        <td th:text="${person.lastName}"></td>
+        <td th:text="${person.age}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
